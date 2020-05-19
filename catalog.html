@@ -25,6 +25,10 @@
     <h1>Магазин готовых шаблонов</h1>
     <aside> 
      <h2>Фильтр</h2>
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <!--Здесь будет форма-ползунок стоимости--> 
+      </fieldset>
      
       <fieldset>
         <legend>Сетка:</legend>
@@ -68,8 +72,32 @@
       <button type="button">Показать</button> 
     </aside> 
 
-    <section>
+    <section class="catalog">
             <h2>Обзор макетов</h2>
+             <section class="sort">
+               <h2 class="visually-hidden">Сортировка</h2>
+                <b>Сортировать:</b>
+                 <ul>
+                   <li>
+                     <a href="#">По цене</a>
+                   </li>
+                   <li>
+                     <a href="#">По типу</a>
+                   </li>
+                   <li>
+                     <a href="#">По названию</a>
+                   </li>
+                 </ul>
+                 <p>
+                   <button type="button">
+                     <span>сверху вниз</span>
+                   </button>
+                   <button type="button">
+                     <span>снизу вверх</span>
+                   </button> 
+                 </p> 
+             </section>
+              <section class="projects">
             <ul>
                <li>
                    <a href="#">
@@ -109,8 +137,29 @@
             </li>
 
             </ul>
+             <ul class="number-list">
+               <li> 
+                 <a href="#">1</a>
+               </li>
+               <li>
+                 <a href="#">2</a>
+               </li>
+               <li>
+                 <a href="#">3</a>
+               </li>
+                <li>
+                  <a href="#">Следующая</a>
+                </li>
+             </ul>
+
+          </section>
 
     </section>
+
+    <section class="maps">
+      <h2 class="visually-hidden">Карта</h2> 
+       <iframe src="https://via.placeholder.com/150x100"></iframe> 
+    </section> 
 
   </main>
   <footer>
