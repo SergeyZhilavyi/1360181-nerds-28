@@ -8,23 +8,24 @@
 
   <header>
       <nav>
-        <a href="index.html">
+        <a href="index.html" aria-label="Переходим на главную страницу">
           <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип проекта Нёрдс">
         </a>
         <ul>
-         <li><a href="#">Студия</a></li>
-         <li><a href="#">Клиенты</a></li>
-         <li><a href="catalog.html">Магазин</a></li>
-         <li><a href="#">Контакты</a></li> 
+         <li><a href="#" aria-label="Эта ссылка не работает">Студия</a></li>
+         <li><a href="#" aria-label="Эта ссылка не работает">Клиенты</a></li>
+         <li><a href="catalog.html" aria-label="Остаёмся на этой странице">Магазин</a></li>
+         <li><a href="#" aria-label="Эта ссылка не работает">Контакты</a></li> 
         </ul> 
-        <a href="#">Корзина</a> 
+        <a href="#" aria-label="Эта ссылка не работает">Корзина</a> 
       </nav>
         
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <aside> 
-     <h2>Фильтр</h2>
+     <h2 class="visually-hidden">Фильтр</h2>
+     <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Стоимость:</legend>
         <!--Здесь будет форма-ползунок стоимости--> 
@@ -34,42 +35,48 @@
         <legend>Сетка:</legend>
         <ul>
            <li>
-               <label>Адаптивная</label>
+            <input type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
+               <label for="filter-adaptive">Адаптивная</label>
            </li>
            <li>
-               <label>Фиксированная</label>
+            <input type="radio" name="fixed-group" value="fixed" id="filter-fixed"> 
+               <label for="filter-fixed">Фиксированная</label> 
            </li>
            <li>
-               <label>Резиновая</label>
+            <input type="radio" name="elastic-group" value="elastic" id="filter-elastic">
+               <label for="filter-elastic">Резиновая</label>
            </li>
-
         </ul>
-
       </fieldset> 
 
       <fieldset>
            <legend>Особенности:</legend>
            <ul>
                 <li>
-                    <label>Слайдер</label>
+                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                    <label for="filter-slider">Слайдер</label>
                 </li>
                 <li>
-                    <label>Блок преимуществ</label>
+                  <input type="checkbox" name="block" id="filter-block"> 
+                    <label for="filter-block">Блок преимуществ</label>
                 </li>
                 <li>
-                    <label>Новости</label>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                    <label for="filter-news">Новости</label>
                 </li>
                 <li>
-                    <label>Галерея</label>
+                  <input type="checkbox" name="gallery" id="filter-gallery"> 
+                    <label for="filter-gallery">Галерея</label>
                 </li>
                 <li>
-                    <label>Корзина</label> 
-                </li>
-
+                  <input type="checkbox" name="basket" id="filter-basket">
+                    <label for="filter-basket">Корзина</label>  
+                </li> 
            </ul>
 
       </fieldset>
-      <button type="button">Показать</button> 
+      <button type="submit" aria-label="Проверить наличие">Показать</button> 
+    </form> 
     </aside> 
 
     <section class="catalog">
@@ -78,57 +85,57 @@
                 <b>Сортировать:</b>
                  <ul>
                    <li>
-                     <a href="#">По цене</a>
+                     <a href="#" aria-label="Эта ссылка не работает">По цене</a>
                    </li>
                    <li>
-                     <a href="#">По типу</a>
+                     <a href="#" aria-label="Эта ссылка не работает">По типу</a>
                    </li>
                    <li>
-                     <a href="#">По названию</a>
+                     <a href="#" aria-label="Эта ссылка не работает">По названию</a>
                    </li>
                  </ul>
                  <p>
-                   <button type="button">
-                     <span>сверху вниз</span>
+                   <button type="button" aria-label="Уменьшаем значение">
+                     <span class="visually-hidden">сверху вниз</span>
                    </button>
-                   <button type="button">
-                     <span>снизу вверх</span>
+                   <button type="button" aria-label="Увеличиваем значение">
+                     <span class="visually-hidden">снизу вверх</span>
                    </button> 
                  </p> 
             <ul>
                <li>
-                   <a href="#">
-                       <h2>Седона</h2>
+                   <a href="#" aria-label="Эта ссылка не работает">
+                       <h2 class="visually-hidden">Седона</h2>
                        <img src="img/sedona.jpg" width="358" height="578"  alt="Седона"> 
                    </a> 
                </li>
                <li>
-                <a href="#">
-                    <h2>Pink</h2>
+                <a href="#" aria-label="Эта ссылка не работает">
+                    <h2 class="visually-hidden">Pink</h2>
                        <img src="img/pink.jpg"  width="358" height="578"  alt="Pink"> 
                 </a> 
             </li>
             <li>
-                <a href="#">
-                    <h2>Borodinski</h2>
+                <a href="#" aria-label="Эта ссылка не работает">
+                    <h2 class="visually-hidden">Borodinski</h2>
                        <img src="img/borodinski.jpg"  width="358" height="578"  alt="Borodinski"> 
                 </a> 
             </li>
             <li>
-                <a href="#">
-                    <h2>Мишка</h2>
+                <a href="#" aria-label="Эта ссылка не работает">
+                    <h2 class="visually-hidden">Мишка</h2>
                        <img src="img/mishka.jpg"  width="358" height="578"  alt="Мишка"> 
                 </a> 
             </li>
             <li>
-                <a href="#">
-                    <h2>A plus</h2>
+                <a href="#" aria-label="Эта ссылка не работает">
+                    <h2 class="visually-hidden">A plus</h2>
                        <img src="img/a-plus.jpg"  width="358" height="578" alt="A plus">
                 </a> 
             </li>
             <li>
-                <a href="#">
-                    <h2>Квас</h2>
+                <a href="#" aria-label="Эта ссылка не работает"> 
+                    <h2 class="visually-hidden">Квас</h2>
                        <img src="img/kvas.jpg"  width="358" height="578"  alt="Квас"> 
                 </a> 
             </li>
@@ -136,16 +143,16 @@
             </ul>
              <ul class="number-list">
                <li> 
-                 <a href="#">1</a>
+                 <a href="#" aria-label="Эта ссылка не работает">1</a>
                </li>
                <li>
-                 <a href="#">2</a>
+                 <a href="#" aria-label="Эта ссылка не работает">2</a>
                </li>
                <li>
-                 <a href="#">3</a>
+                 <a href="#" aria-label="Эта ссылка не работает">3</a>
                </li>
                 <li>
-                  <a href="#">Следующая</a>
+                  <a href="#" aria-label="Эта ссылка не работает">Следующая</a>
                 </li>
              </ul>
 
@@ -163,13 +170,13 @@
     
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="https://vk.com/" aria-label="Переход на страницу вконтакте" target="_blank">Вконтакте</a>
          </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a href="https://ru-ru.facebook.com/" aria-label="Переход на страницу фейсбук" target="_blank">Фейсбук</a>
          </li>
          <li>
-           <a href="#">Инстаграм</a>  
+           <a href="https://www.instagram.com/" aria-label="Переход на страницу инстаграм" target="_blank">Инстаграм</a>  
          </li>
       </ul>
     
@@ -180,6 +187,30 @@
      </section>
 
  </footer>
+
+ <section class="modal">
+  <h2>Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post"> 
+    <p>
+      <label for="user-name">Ваше имя:</label>
+      <br>
+      <input id="user-name" type="text" name="login-name" placeholder="Имя Фамилия" required> 
+    </p>
+     <p>
+       <label for="user-email">Ваш email:</label> 
+       <br>
+       <input id="user-email" type="text" name="email" placeholder="email@example.com" required> 
+     </p>
+     <p>
+       <label for="letter-text">Текст письма:</label> 
+       <br>
+       <textarea id="letter-text"  name="text" rows="5" cols="100">В свободной форме</textarea> 
+      
+     </p>
+     <button type="submit" aria-label="Отправляю введённые вами данные">Отправить</button> 
+  </form>
+  <button type="button" aria-label="Закрываю окно с формой">Закрыть</button> 
+</section>
 
   </body>
 

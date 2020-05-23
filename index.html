@@ -8,16 +8,16 @@
 
   <header>
       <nav>
-        <a>
+        <a href="#" aria-label="Эта ссылка не работает"> 
           <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип проекта Нёрдс">
         </a>
         <ul>
-         <li><a href="#">Студия</a></li>
-         <li><a href="#">Клиенты</a></li>
-         <li><a href="catalog.html">Магазин</a></li>
-         <li><a href="#">Контакты</a></li> 
+         <li><a href="#" aria-label="Эта ссылка не работает">Студия</a></li>
+         <li><a href="#" aria-label="Эта ссылка не работает">Клиенты</a></li>
+         <li><a href="catalog.html" aria-label="Переходим в наш магазин">Магазин</a></li> 
+         <li><a href="#" aria-label="Эта ссылка не работает" >Контакты</a></li> 
         </ul> 
-        <a href="#">Корзина</a> 
+        <a href="#" aria-label="Эта ссылка не работает">Корзина</a> 
       </nav>
 
   </header>
@@ -42,7 +42,7 @@
                  <br>
                  для вашего сайта или мобильного приложения. 
                </p>
-                 <a href="#">Узнать больше</a> 
+                 <a href="#" aria-label="Эта ссылка не работает">Узнать больше</a> 
             </li>
             <li>
                <h3>
@@ -55,7 +55,7 @@
                   <br>
                   для расчета идеальных пропорций. 
                 </p>
-                <a href="#">Узнать больше</a> 
+                <a href="#" aria-label="Эта ссылка не работает">Узнать больше</a> 
             </li>
             <li>
                <h3>
@@ -68,31 +68,31 @@
                  <br>
                  Ближе к полуночи работа только начинается. 
                </p>
-               <a href="#">Узнать больше</a> 
+               <a href="#" aria-label="Эта ссылка не работает">Узнать больше</a> 
             </li>
          </ul> 
       </section>
 
     <section>
-      <h2>Предложения</h2> 
+      <h2 class="visually-hidden">Предложения</h2> 
         <ul>
            <li>
             <h3>Веб-сайты</h3>
               <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">  
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="#">Заказать</a> 
+              <a href="#" aria-label="Эта ссылка не работает">Заказать</a> 
            </li>
            <li>
             <h3>Приложения</h3>
               <img src="img/illustration-2.jpg"  width="300" height="146" alt="Приложения">
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="#">Заказать</a> 
+              <a href="#" aria-label="Эта ссылка не работает">Заказать</a> 
            </li>
            <li>
              <h3>Презентации</h3> 
             <img src="img/illustration-3.jpg"  width="300" height="146" alt="Презентации">
             <p>Вы даже не подозреваете, насколько вы изумительны!</p> 
-            <a href="#">Заказать</a> 
+            <a href="#" aria-label="Эта ссылка не работает">Заказать</a>  
            </li>
 
         </ul>
@@ -146,22 +146,22 @@
       <h2 class="visually-hidden">Наши партнёры</h2>
        <ul>
          <li>
-           <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"> 
+           <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="переход на сайт Html Academy" target="_blank"> 
              <img src="img/html_academy.png"  width="199" height="68"  alt="HTML Academy"> 
            </a>
          </li>
          <li>
-          <a href="#">
+          <a href="#" aria-label="Эта ссылка не работает">
             <img src="img/borodinski_friend.png" width="209" height="90" alt="Barbershop Borodinski"> 
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Эта ссылка не работает">
             <img src="img/pink_friend.png" width="185" height="52" alt="Pink"> 
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Эта ссылка не работает">
             <img src="img/mishka_friend.png" width="173" height="84" alt="Mishka"> 
           </a>
         </li>
@@ -179,13 +179,13 @@
      
        <ul>
          <li>
-           <a href="#">Вконтакте</a>
+           <a href="https://vk.com/" aria-label="Переход на страницу вконтакте" target="_blank">Вконтакте</a> 
           </li>
          <li>
-           <a href="#">Фейсбук</a>
+           <a href="https://ru-ru.facebook.com/" aria-label="Переход на страницу фейсбук" target="_blank">Фейсбук</a> 
           </li>
           <li>
-            <a href="#">Инстаграм</a> 
+            <a href="https://www.instagram.com/" aria-label="Переход на страницу инстаграм" target="_blank">Инстаграм</a>  
           </li>
        </ul>
      
@@ -196,6 +196,29 @@
       </section>
 
   </footer>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post"> 
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <br>
+        <input id="user-name" type="text" name="login-name" placeholder="Имя Фамилия" required> 
+      </p>
+       <p>
+         <label for="user-email">Ваш email:</label> 
+         <br>
+         <input id="user-email" type="text" name="email" placeholder="email@example.com" required> 
+       </p>
+       <p>
+         <label for="letter-text">Текст письма:</label> 
+         <br>
+         <textarea id="letter-text"  name="text" rows="5" cols="100">В свободной форме</textarea> 
+        
+       </p>
+       <button type="submit" aria-label="Отправляю введённые вами данные">Отправить</button> 
+    </form>
+    <button type="button" aria-label="Закрываю окно с формой">Закрыть</button> 
+  </section>
 
   </body>
 </html>
