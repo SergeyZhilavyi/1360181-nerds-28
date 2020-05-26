@@ -28,7 +28,23 @@
      <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Стоимость:</legend>
-        <!--Здесь будет форма-ползунок стоимости--> 
+        <div class="range">
+        <!--Здесь с помощью CSS будет сделана секция с ползунком-->
+        </div>
+        <div class="price">
+         <p class="price-range">
+           <label for="min-price">
+             ОТ
+           </label>
+           <input id="min-price" type="text" name="min-price" placeholder="0" value="0">
+         </p>
+         <p class="price-range">
+           <label for="max-price">
+             ДО
+           </label>
+           <input id="max-price" type="text" name="max-price" placeholder="15000" value="15000"> 
+         </p>
+        </div>
       </fieldset>
      
       <fieldset>
@@ -163,6 +179,12 @@
     <section class="maps">
       <h2 class="visually-hidden">Карта</h2> 
        <iframe src="https://via.placeholder.com/150x100"></iframe> 
+       <section class="address">
+        <h3>NЁRDS DESIGN STUDIO</h3> 
+        <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
+        <span>тел. +7(812) 275-75-75</span>
+        <a href="#" class="button button-address" aria-label="Вызываем форму обратной связи">Напишите нам</a> 
+      </section>
     </section> 
 
   </main>
