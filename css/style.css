@@ -1,0 +1,56 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
+
+  :root {
+      --basic-black: #000000;
+      --basic-gray: #a6a6a6;
+      --basic-red: #fb565a;
+      --light-gray: #eeeeee;
+      --hover-red: #e74246;
+      --click-red: #d7373d;
+      --basic-green: #00CA74;
+      --hover-green: #00BC6C;
+      --click-green: #00AA62;
+      --basic-yellow: #EFC84A;
+      --hover-yellow: #EAB534;
+      --click-yellow: #E5A722;
+      --basic-white: #FFFFFF;
+      --gray-icon: #E1E1E1;
+      --basic-gray-form: #D7DCDE;
+      --hover-gray-form: #B4B9BB;
+      --hover-gray-button: #DFDFDF;
+      --hover-gray-button: #D5D5D5;
+      --list-active: #DBDBDB;
+      --button-filter: #231F20;
+      --radio-basic: #4D4D4D;
+      --radio-comment: #283136;
+  }
+
+  body {
+      min-width: 1460px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color:  var(--radio-comment);
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  
